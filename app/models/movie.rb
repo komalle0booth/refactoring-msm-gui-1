@@ -22,4 +22,8 @@ class Movie < ApplicationRecord
 
     return the_director
   end
+
+  def title_with_year
+    return "#{self.title} (#{self.year})"
+  end
 end
